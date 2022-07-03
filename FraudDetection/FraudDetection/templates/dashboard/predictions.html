@@ -1,0 +1,86 @@
+{% extends 'partials/base.html' %}
+{% block title %}All Predictions{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-8 offset-md-2">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">v1</th>
+                    <th scope="col">v2</th>
+                    <th scope="col">v3</th>
+                    <th scope="col">v4</th>
+                    <th scope="col">v5</th>
+                    <th scope="col">v6</th>
+                    <th scope="col">v7</th>
+                    <th scope="col">v8</th>
+                    <th scope="col">v9</th>
+                    <th scope="col">v10</th>
+                    <th scope="col">v11</th>
+                    <th scope="col">v12</th>
+                    <th scope="col">v13</th>
+                    <th scope="col">v14</th>
+                    <th scope="col">v15</th>
+                    <th scope="col">v16</th>
+                    <th scope="col">v17</th>
+                    <th scope="col">v18</th>
+                    <th scope="col">v19</th>
+                    <th scope="col">v20</th>
+                    <th scope="col">v21</th>
+                    <th scope="col">v22</th>
+                    <th scope="col">v23</th>
+                    <th scope="col">v24</th>
+                    <th scope="col">v25</th>
+                    <th scope="col">v26</th>
+                    <th scope="col">v27</th>
+                    <th scope="col">v28</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Predictions</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for data in predicted_case %}
+                  <tr>
+                    <th scope="row">{{ data.time }}</th>
+                    <td>{{ data.v1 }}</td>
+                    <td>{{ data.v2 }}</td>
+                    <td>{{ data.v3 }}</td>
+                    <td>{{ data.v4 }}</td>
+                    <td>{{ data.v5 }}</td>
+                    <td>{{ data.v6 }}</td>
+                    <td>{{ data.v7 }}</td>
+                    <td>{{ data.v8 }}</td>
+                    <td>{{ data.v9 }}</td>
+                    <td>{{ data.v10 }}</td>
+                    <td>{{ data.v11 }}</td>
+                    <td>{{ data.v12 }}</td>
+                    <td>{{ data.v13 }}</td>
+                    <td>{{ data.v14 }}</td>
+                    <td>{{ data.v15 }}</td>
+                    <td>{{ data.v16 }}</td>
+                    <td>{{ data.v17 }}</td>
+                    <td>{{ data.v18 }}</td>
+                    <td>{{ data.v19 }}</td>
+                    <td>{{ data.v20 }}</td>
+                    <td>{{ data.v21 }}</td>
+                    <td>{{ data.v22 }}</td>
+                    <td>{{ data.v23 }}</td>
+                    <td>{{ data.v24 }}</td>
+                    <td>{{ data.v25 }}</td>
+                    <td>{{ data.v26 }}</td>
+                    <td>{{ data.v27 }}</td>
+                    <td>{{ data.v28 }}</td>
+                    <td>{{ data.amount }}</td>
+                    <td>{{ data.predictions }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
